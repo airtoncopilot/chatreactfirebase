@@ -49,7 +49,8 @@ export const ChatRoom = () => {
         ))}
       </main>
       <form onSubmit={sendMessage}>
-        <input 
+        <input
+          placeholder="Digite sua mensagem" 
           type="text" 
           value={formValue} 
           onChange={e => setFormValue(e.target.value)}
@@ -67,7 +68,7 @@ export const ChatMessage = (props) => {
 
   return (
     <div className={`message ${messageClass}`}>
-      <img src={photoURL}/>
+      <img src={ photoURL }/>
       <p>{text}</p>
     </div>
   );
